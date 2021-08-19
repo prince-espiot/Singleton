@@ -44,7 +44,7 @@ namespace singleton
 			}
 			public void Dosomething()
 			{
-				Console.WriteLine("Single line to ");
+				Console.WriteLine("Singleto class as been called ");
 				Console.ReadLine();
 			}
 		}
