@@ -17,9 +17,36 @@ namespace singleton
 			Console.WriteLine("Hello World!");
 			
 			// TODO: Implement Functionality Here
+			Mysinlgeton mysingleton = Mysinlgeton.Instance;
+			mysingleton.Dosomething();
 			
 			Console.Write("Press any key to continue . . . ");
 			Console.ReadKey(true);
+		}
+		
+		public class Mysinlgeton
+		{
+			private static Mysinlgeton instance = null; //new Mysinlgeton(); // instance of the class
+			private Mysinlgeton(){
+			//private constructor which disallows the creation of new instance
+			}
+			
+			public static Mysinlgeton Instance
+			{
+				get{ 
+					if(instance == null)
+					{
+						instance = new Mysinlgeton();
+					}
+					
+						return instance;
+					} // methoda to expose the instance so the functionality of the single is shown
+			}
+			public void Dosomething()
+			{
+				Console.WriteLine("Single line to ");
+				Console.ReadLine();
+			}
 		}
 	}
 }
