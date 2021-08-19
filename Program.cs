@@ -14,8 +14,6 @@ namespace singleton
 	{
 		public static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World!");
-			
 			// TODO: Implement Functionality Here
 			Mysinlgeton mysingleton = Mysinlgeton.Instance;
 			mysingleton.Dosomething();
